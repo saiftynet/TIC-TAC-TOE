@@ -52,7 +52,7 @@ sub minimax{
 
 
 ### Acknowledgements
-[Demonstrating PERL with Tic-Tac-Toe br G Bartholomew](https://fedoramagazine.org/demonstrating-perl-with-tic-tac-toe-part-1/)
+[Demonstrating PERL with Tic-Tac-Toe by G Bartholomew](https://fedoramagazine.org/demonstrating-perl-with-tic-tac-toe-part-1/)
 
 [Games-TicTacToe by MANWAR](https://metacpan.org/dist/Games-TicTacToe)
 
