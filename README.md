@@ -1,7 +1,8 @@
 # TIC-TAC-TOE
 ###  A Tic Tac Toe game and experiments using MiniMax algorithm
 
-<img width="277" height="278" alt="image" src="https://github.com/user-attachments/assets/58e90552-e57c-4d8a-9968-aa711e6a4caf" />
+<img width="310" height="276" alt="tictactoe" src="https://github.com/user-attachments/assets/1aedc6be-3a08-4335-a247-75a70da9a4a8" />
+
 
 ### Introduction
 Plenty of Tic Tac Toe game implementations exists in Perl. This is a simple implementation of
