@@ -1,9 +1,12 @@
 # TIC-TAC-TOE
 ###  A Tic Tac Toe game and experiments using MiniMax algorithm
 
-This is a simple implementation of Tic Tac Toe, using Perlish methods to evaluate the game board.
-The game state is an array containing a 0 representing each empty cell and a 0 at cell zero, allowing
-simply setting the position with "X" or "O" to represent a move
+<img width="277" height="278" alt="image" src="https://github.com/user-attachments/assets/58e90552-e57c-4d8a-9968-aa711e6a4caf" />
+
+Plenty of Tic Tac Toe game implementations exists in Perl. This is a simple implementation of
+Tic Tac Toe, using Perlish methods to evaluate the game board. The game state is an array
+containing a 0 representing each empty cell and a 0 at cell zero, allowing simply setting
+the position with "X" or "O" to represent a move.
 ```
 my $board=[0,(0) x 9];
 ```
@@ -40,6 +43,15 @@ sub minimax{
                         {move=>$moves[0],score=>$scores->{$moves[0]}}
 }
 ```
+
+Acknowledgements
+[Demonstrating PERL with Tic-Tac-Toe br G Bartholomew](https://fedoramagazine.org/demonstrating-perl-with-tic-tac-toe-part-1/)
+
+[Games-TicTacToe by MANWAR](https://metacpan.org/dist/Games-TicTacToe)
+
+[Rosetta Code](https://rosettacode.org/wiki/Tic-tac-toe#Perl)
+
+
 
 
 
