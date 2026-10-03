@@ -3,6 +3,7 @@
 
 <img width="277" height="278" alt="image" src="https://github.com/user-attachments/assets/58e90552-e57c-4d8a-9968-aa711e6a4caf" />
 
+### Introduction
 Plenty of Tic Tac Toe game implementations exists in Perl. This is a simple implementation of
 Tic Tac Toe, using Perlish methods to evaluate the game board. The game state is an array
 containing a 0 representing each empty cell and a 0 at cell zero, allowing simply setting
@@ -10,7 +11,9 @@ the position with "X" or "O" to represent a move.
 ```
 my $board=[0,(0) x 9];
 ```
-A simple `join` of every possible winning sequence is searched using a simple regex
+
+
+A simple `join` of every possible winning sequence as an array slice is searched using a simple regex
 ```
 sub victory{
    my $state=shift;
@@ -20,6 +23,8 @@ sub victory{
   return $1?{XXX=>10,OOO=>-10}->{$1}:0;
 }
 ```
+
+
 The [MiniMax](https://en.wikipedia.org/wiki/Minimax) algorithm is a derivation of examples presented [elsewhere](https://jacoby.github.io/2020/03/16/minimax-british-coins-and-oldschool-ai-in-perl.html) (but not so far seen in actual Perl Code).
 This algorithm is a search for a best move in a turn based game, where the options are explored, and the terminal scores for each decision returned, with one player hoping to achieve the highest score and the other targeting the lowest score.  Typically the starting score 
 is set at + of - infinity; this appears not to be necessary for TicTacToe.
@@ -44,7 +49,8 @@ sub minimax{
 }
 ```
 
-Acknowledgements
+
+### Acknowledgements
 [Demonstrating PERL with Tic-Tac-Toe br G Bartholomew](https://fedoramagazine.org/demonstrating-perl-with-tic-tac-toe-part-1/)
 
 [Games-TicTacToe by MANWAR](https://metacpan.org/dist/Games-TicTacToe)
