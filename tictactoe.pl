@@ -21,13 +21,13 @@ while (1){# game loop
   drawBoard($board);
   last if victory($board) || ! scalar emptyCells($board);
   
-  print "Available cells = ",emptyCells($board),"\n";
-  print "Enter location or q to quit;";
+  print "  Available cells = ",emptyCells($board),"\n";
+  print "  Enter location or q to quit;";
   while ($inp = <STDIN>){  # user input
     chomp $inp;
     exit(0) if $inp eq "q";
     if ( $inp !~/^\d$/  || $board->[$inp]){
-      print "\"$inp\" is Invalid \n" ;
+      print "  \"$inp\" is Invalid \n" ;
     }
     else{
       $board->[$inp]="O";
@@ -40,9 +40,9 @@ while (1){# game loop
 };
 
 # no more empty cells or somebody has won;
-print "\nGame Over\n";
+print "  Game Over\n";
 my $res=victory($board);
-print $res==10?"Computer Wins":($res==-10?" You win": "Draw");
+print $res==10?"  Computer Wins":($res==-10?" You win": "Draw");
 
 # given a 3 X 3 board numbered 1..9 checks rows, columns
 # and diagonals
@@ -85,7 +85,7 @@ sub minimax{
 sub drawBoard{  # print 
   my $brd=shift;
   system $^O eq 'MSWin32' ? 'cls' : 'clear';
-  my $output="       TIC TAC TOE\n    ┌────┬────┬────┐
+  my $output="\n       TIC TAC TOE\n    ┌────┬────┬────┐
     │ $brd->[1]  │ $brd->[2]  │ $brd->[3]  │
     │   1│   2│   3│
     ├────┼────┼────┤
